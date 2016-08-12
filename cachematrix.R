@@ -1,7 +1,11 @@
-## Put comments here that give an overall description of what your
-## functions do
 
-## Write a short comment describing this function
+
+## makeCacheMatrix creates a list of 4 functions. 
+## Function 1: setMat() sets the value of the matrix
+## Function 2: getMat() returns the value of the input matrix
+## Function 3: setInv() defines the matrix inverse
+## Function 4: getInv() returns the value of the matrix inverse
+
 
 makeCacheMatrix <- function(x = numeric()) {
 	m <- NULL
@@ -17,7 +21,10 @@ makeCacheMatrix <- function(x = numeric()) {
 }
 
 
-## Write a short comment describing this function
+
+
+## cacheSolve returns the inverse of a given matrix if it already exists. 
+## If the inverse doesn't exist, it calculates and caches the inverse using setInv() from makeCacheMatrix.
 
 cacheSolve <- function(x, ...) {
 	m <- x$getInv()
